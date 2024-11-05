@@ -6,27 +6,27 @@ export default function Process() {
     {
       icon: Lightbulb,
       title: 'Ideation',
-      description: 'We start by understanding your vision and goals',
+      description: 'Have an innovative idea? Let’s connect and collaborate to brainstorm effectively, turning your unique vision into a remarkable reality!',
     },
     {
       icon: Users,
-      title: 'Research',
-      description: 'Analyze market trends and user needs',
+      title: 'User Survey',
+      description: 'We leverage our tech community to conduct surveys, gathering insights on market trends and user needs to refine your project',
     },
     {
       icon: Palette,
-      title: 'Design',
-      description: 'Create intuitive and beautiful interfaces',
+      title: 'UI Design',
+      description: 'Design stunning, intuitive interfaces that enhance user experience and effectively convey your brands message.',
     },
     {
       icon: Code2,
       title: 'Development',
-      description: 'Build robust and scalable solutions',
+      description: 'Develop robust, scalable solutions that meet your business needs while ensuring optimal performance and reliability.',
     },
     {
       icon: Rocket,
       title: 'Launch',
-      description: 'Deploy and maintain your project',
+      description: 'We will launch your product in our network and maintain it with expertise, ensuring seamless operation and continuous support for long-term success.',
     },
   ];
 

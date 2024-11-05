@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center">
               <Code2 className="h-8 w-8 text-indigo-400" />
-              <span className="ml-2 text-xl font-bold">DevCraft</span>
+              <span className="ml-2 text-xl font-bold">Let's Code</span>
             </div>
             <p className="mt-4 text-gray-400">
               Building exceptional digital experiences that drive business

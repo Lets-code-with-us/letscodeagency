@@ -11,7 +11,7 @@ export default function About() {
             Who We Are
           </h2>
           <p className="mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto">
-            A passionate team of digital craftsmen dedicated to creating exceptional web experiences
+            A passionate team of digital craftsmen dedicated to creating exceptional web experiences.
           </p>
         </div>
 
@@ -20,19 +20,19 @@ export default function About() {
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Our Mission</h3>
               <p className="text-gray-600">
-                To empower businesses with cutting-edge digital solutions that drive growth and success
+                To empower businesses with cutting-edge digital solutions that drive growth and success.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Our Vision</h3>
               <p className="text-gray-600">
-                To be the go-to partner for businesses seeking innovative and impactful digital transformations
+                To be the go-to partner for businesses seeking innovative and impactful digital transformations.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Our Values</h3>
               <p className="text-gray-600">
-                Excellence, Innovation, and Client Success drive everything we do
+                Excellence, Innovation, and Client Success drive everything we do.
               </p>
             </div>
           </div>
