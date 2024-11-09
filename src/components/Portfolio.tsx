@@ -2,24 +2,38 @@ import React from 'react';
 
 export default function Portfolio() {
   const projects = [
+    
     {
-      title: 'E-commerce Platform',
-      description: 'A modern e-commerce solution with real-time inventory management',
-      image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800&h=600',
-      tags: ['React', 'Node.js', 'MongoDB'],
+      title: ' E-Vi',
+      description: 'Revolutionize urban transport with Chhota Otto, designed for comfort and efficiency.',
+      image: 'auto.png',
+      tags: ['NEXT js', 'Framer',],
     },
     {
-      title: 'Healthcare Dashboard',
-      description: 'Analytics dashboard for healthcare providers',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800&h=600',
-      tags: ['Vue.js', 'D3.js', 'Firebase'],
+      title: 'DesiQna',
+      description: 'DesiQNA Personalized Training & 1-1 Mentoring Program',
+      image: 'desiqna.png',
+      tags: ['MERN'],
     },
     {
-      title: 'Social Media App',
-      description: 'Mobile-first social platform for creative professionals',
-      image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=800&h=600',
-      tags: ['React Native', 'GraphQL', 'AWS'],
+      title: 'Staylon Beauty',
+      description: 'Offers a range of beauty and wellness services.',
+      image: 'staylon.png',
+      tags: ['HTML', 'CSS','JS'],
     },
+    {
+      title: 'Traid Trails',
+      description: 'Traid Trails deliver high-quality agricultural products right to your doorstep.',
+      image: 'tradetrails.png',
+      tags: ['Wordpress'],
+    },
+    {
+      title: 'Sanjay Caterers',
+      description: 'Offer a wide range of catering options that cater to all occasions.',
+      image: 'staylon.png',
+      tags: ['HTML', 'CSS','JS'],
+    },
+    
   ];
 
   return (
