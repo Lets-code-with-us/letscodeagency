@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -8,11 +9,19 @@ export default function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log(formData);
+  const [state, handleSubmit] = useForm("mdkozgkv");
+  const [alertShown, setAlertShown] = useState(false); // Track if alert is shown
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
+
+  if (state.succeeded && !alertShown) {
+    // Trigger alert on successful form submission and set alertShown to true
+    alert("Thanks for reaching out! We will get back to you soon.");
+    setAlertShown(true); // Set alertShown to true to avoid multiple alerts
+  }
 
   return (
     <section id="contact" className="py-20 bg-gray-50">
@@ -36,8 +45,9 @@ export default function Contact() {
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  onChange={handleChange}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                   required
                 />
@@ -49,10 +59,16 @@ export default function Contact() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={handleChange}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                   required
+                />
+                <ValidationError 
+                  prefix="Email" 
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
               <div>
@@ -61,15 +77,22 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={4}
                   value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  onChange={handleChange}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                   required
+                />
+                <ValidationError 
+                  prefix="Message" 
+                  field="message"
+                  errors={state.errors}
                 />
               </div>
               <button
                 type="submit"
+                disabled={state.submitting}
                 className="w-full bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition"
               >
                 Send Message
@@ -97,7 +120,7 @@ export default function Contact() {
                 <MapPin className="h-6 w-6 text-indigo-600 mt-1" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Location</h3>
-                  <p className="text-gray-600">New Delhi , India</p>
+                  <p className="text-gray-600">New Delhi, India</p>
                 </div>
               </div>
             </div>
