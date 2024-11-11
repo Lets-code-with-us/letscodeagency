@@ -21,6 +21,13 @@ export default function Contact() {
     // Trigger alert on successful form submission and set alertShown to true
     alert("Thanks for reaching out! We will get back to you soon.");
     setAlertShown(true); // Set alertShown to true to avoid multiple alerts
+
+    // Reset form data to clear the form fields
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    });
   }
 
   return (
