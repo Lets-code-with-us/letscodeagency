@@ -4,22 +4,20 @@ import { Quote } from 'lucide-react';
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      role: 'CEO, TechStart',
-      content: 'Working with this team was a game-changer for our business. They delivered beyond our expectations and helped us achieve our digital transformation goals ahead of schedule.',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200',
+      name: 'DesiQNA',
+      role: 'Founder, DesiQNA',
+      content: 'Let’s Code truly transformed my website! Since they developed it, I’ve seen a significant increase in leads and inquiries. The design is sleek, modern, and perfectly aligned with my brand. They not only built a visually stunning site but also ensured it was optimized for user experience and search engines.',
+     
     },
     {
-      name: 'Michael Chen',
-      role: 'Founder, InnovateCo',
-      content: "Their attention to detail and technical expertise helped us launch our platform ahead of schedule. The team's commitment to quality is truly outstanding.",
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200',
+      name: 'Manish',
+      role: 'Founder, Stalon',
+      content: "Working with Let's Code was a game changer for my business. They developed a professional website that perfectly captured my vision. Thanks to their expertise, my business has grown and gained recognition in ways I never imagined.",
     },
     {
-      name: 'Emily Davis',
-      role: 'Marketing Director, GrowthLabs',
-      content: "The team's creative approach and dedication to our project exceeded all expectations. They truly understand how to deliver results that matter.",
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200',
+      name: 'Mirag',
+      role: 'Co-Founder, Innvokate',
+      content: "I can't thank Let's Code enough for the incredible website they created for me. Their team understood my business goals and delivered a site that helped me stand out. As a result, my business has gained significant visibility and has expanded far beyond what I expected.",
     },
   ];
 
@@ -43,14 +41,7 @@ export default function Testimonials() {
             >
               <Quote className="absolute top-6 right-6 h-8 w-8 text-indigo-100 group-hover:text-indigo-200 transition-colors duration-300" />
               <div className="flex items-center mb-6">
-                <div className="relative">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-14 h-14 rounded-full object-cover ring-4 ring-indigo-50 group-hover:ring-indigo-100 transition-all duration-300"
-                  />
-                  <div className="absolute inset-0 rounded-full shadow-inner" />
-                </div>
+                
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
                     {testimonial.name}
